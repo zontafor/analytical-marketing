@@ -3,8 +3,7 @@
 
 ---
 
-This project supports **Gotham Group studio executives (circa 2013)** in deciding **when to release *The Maze Runner* in 2014**.  
-The core objective is to maximize market share while minimizing competitive cannibalization by avoiding release weeks where competing films are *too similar*.
+This project supports **Gotham Group studio executives (circa 2013)** in deciding **when to release *The Maze Runner* in 2014**. The core objective is to maximize market share while minimizing competitive cannibalization by avoiding release weeks where competing films are *too similar*.
 
 We use data mining and machine learning to:
 - Quantify similarity between films using LDA topic models
