@@ -3,8 +3,6 @@
 
 ---
 
-## 1. Executive Purpose (Business Context)
-
 This project supports **Gotham Group studio executives (circa 2013)** in deciding **when to release *The Maze Runner* in 2014**.  
 The core objective is to maximize market share while minimizing competitive cannibalization by avoiding release weeks where competing films are *too similar*.
 
@@ -18,7 +16,7 @@ This analysis complements (not replaces) industry heuristics around seasonality,
 
 ---
 
-## 2. Data Sources
+## Data Sources
 
 ### Primary Inputs
 - `opus_movies.txt` – movie metadata (title, release date, genre, rating, budget, sequel)
@@ -34,7 +32,7 @@ LDA allows each movie to load on *multiple themes* (e.g., action, dystopian, YA,
 
 ---
 
-## 3. Pipeline Overview (What Each Script Does)
+## Pipeline Overview (What Each Script Does)
 
 Run the full pipeline with:
 
@@ -80,7 +78,7 @@ source("R/run_all.R")
 
 ---
 
-## 4. Topic Interpretation
+## Topic Interpretation
 
 For each of the 10 LDA topics, we output the highest-probability terms:
 
@@ -92,7 +90,7 @@ These labels are used only for interpretation in the slide deck, not in the simi
 
 ---
 
-## 5. Movie Similarity & Validation
+## Movie Similarity & Validation
 
 ### Similarity Metric
 - Each movie is represented as a *n*‑dimensional topic probability vector
@@ -111,7 +109,7 @@ These labels are used only for interpretation in the slide deck, not in the simi
 
 ---
 
-## 6. Weekly Competition Scoring
+## Weekly Competition Scoring
 
 ### Weekly Definition
 - Movies grouped by **Friday-anchored release week**
@@ -130,7 +128,7 @@ These labels are used only for interpretation in the slide deck, not in the simi
 
 ---
 
-## 7. Candidate Release Windows
+## Candidate Release Windows
 
 From the weekly tables, we filter to:
 - Adequate coverage weeks
@@ -146,7 +144,7 @@ From these tables, the slide deck selects 3 to 4 final recommended weeks, balanc
 
 ---
 
-## 8. Robustness Check: k-Means vs LDA
+## Robustness Check: k-Means vs LDA
 
 To assess robustness, we repeat the analysis using k-means clustering on observable movie characteristics.
 
@@ -162,7 +160,7 @@ LDA and k-means broadly agree on low-congestion windows, supporting the robustne
 
 ---
 
-## 9. Outputs & Visualization
+## Outputs & Visualization
 
 All results are written to:
 
@@ -182,7 +180,7 @@ Includes:
 
 ---
 
-## 10. Reproducibility & Dependencies
+## Reproducibility & Dependencies
 
 ### R Packages Used
 - `dplyr`, `tidyr`, `readr`
