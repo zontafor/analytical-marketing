@@ -1,4 +1,4 @@
-# CMU Branch (`analytical-marketing/`)
+# 46-894 Directory (`analytical-marketing/46-894`)
 
 This branch contains my own independently written algorithms, case studies, code files, homework solutions, lecture notes, mathematical proofs, and project reports for courses I have taken at Carnegie Mellon University.
 
